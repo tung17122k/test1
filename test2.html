@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+</head>
+<body>
+	<div id="menu_top">
+		<ul>
+			<li><img src="./anh/logo-gch.jpg"></li>
+			<li><a href="./index.html" title="Trang chủ">Trang chủ</a></li>
+			<li><a href="./gioithieu.html" title="Giới thiệu">Giới thiệu</a></li>
+			<li><a href="./sanpham.html" title="Sản phẩm">Sản phẩm</a></li>
+			<li><a href="./tintuc.html" title="Tin Tức">Tin Tức</a></li>
+			<li><a href="./tuyendung.html" title="Tuyển dụng">Tuyển dụng</a></li>
+			<li><a href="./lienhe.html" title="liên hệ">Liên hệ</a></li>
+		</ul>
+	</div>
+	<div id="banner2">
+		<img src="./anh/gioithieu2.jpg">
+	</div>
+	<div id="main">
+		<div id="left">
+			<fieldset>Giới thiệu</fieldset>
+			<h1>CÂU CHUYỆN THƯƠNG HIỆU</h1>
+			<p>Tên gọi Gong Cha xuất phát từ ý nghĩa trong tiếng Hoa là Trà cung đình. Thời xưa, các loại trà tốt nhất thường được các vị hoàng thân quý tộc ngự dùng. Ngày nay, Gong Cha mong muốn phục vụ các loại trà tốt nhất cho thực khách, cũng như chính tên gọi của thương hiệu. Kể từ khi được thành lập vào năm 2006 tại Đài Loan, chuỗi cửa hàng Gong Cha đã mở rộng trên khắp 19 quốc gia với 1.500 cửa hàng và con số này vẫn tiếp tục tăng trưởng không ngừng. Qua nhiều năm nỗ lực phát triển, Gong Cha đã trở nên phổ biến với khách hàng từ nhiều quốc gia và trở thành một trong những thương hiệu trà đáng tin cậy hàng đầu trên thế giới.</p>
+		</div>
+		<div id="right">
+			<img src="./anh/tea2.jpg">
+		</div>
+	</div>
+	<div id="main2">
+		<div id="left2">
+			<img src="./anh/house.jpg">
+		</div>
+		<div id="right2">
+			<h1>GONG CHA VIỆT NAM</h1>
+			<p>Thương hiệu Gong Cha được công ty TNHH Golden Trust chính thức đưa vào hoạt động tại thị trường Việt Nam từ ngày 11/10/2014. Trải qua hơn năm năm hoạt động, công ty TNHH Golden Trust – đơn vị nhượng quyền độc quyền của Gong Cha tại Việt Nam, đã đưa thương hiệu phát triển nhanh chóng và trở thành một trong những điểm đến thân thuộc của các bạn trẻ yêu thích văn hóa trà sữa và mong muốn trải nghiệm sản phẩm trà uy tín chất lượng với nguồn gốc xuất xứ rõ ràng.</p>
+		</div>
+	</div>
+	<div class="image">
+		<img id="img" onclick="changeImage()" src="./anh/gongcha2.png">
+	</div>
+	<script type="text/javascript">
+		var index2 = 1;
+		changeImage = function(){
+			var imgs = ["./anh/gongcha2.png","./anh/gongcha3.png","./anh/gongcha4.png","./anh/gongcha5.png"];
+			document.getElementById('img').src = imgs[index2];
+			index2++;
+			if (index2==3) {
+				index2 = 0;
+			}
+		}
+		setInterval(changeImage,2000);
+	</script>
+
+</body>
+</html>
